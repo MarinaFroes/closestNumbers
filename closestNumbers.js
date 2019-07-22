@@ -8,13 +8,8 @@ const closestNumbers = (arr) => {
   for(let i = 0; i < arr.length; i++){
 
     for(let j = i + 1; j < arr.length; j++){
-      // Find difference between pairs
-      difference = sortedArr[j] - sortedArr[i];
-
-      // Find absolute difference
-      if(difference < 0){
-        difference *= -1;
-      }
+      // Find absolute value of the difference between pairs
+      difference = Math.abs(sortedArr[j] - sortedArr[i]);
 
       // Store the smallest difference between pairs
       if(smallestDif === undefined || smallestDif > difference) {
