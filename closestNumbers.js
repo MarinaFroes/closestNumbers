@@ -32,8 +32,8 @@ const closestNumbers = (arr) => {
     difAndPairs[k][0] === smallestDif && pairs.push(difAndPairs[k][1], difAndPairs[k][2]);
   }
 
-  // Output all pairs in ascending order, all on the same line with just a single space between each pair of numbers
-  return pairs.join(' ');
+  // Output all pairs in ascending order
+  return pairs;
 };
 
 // Tests
